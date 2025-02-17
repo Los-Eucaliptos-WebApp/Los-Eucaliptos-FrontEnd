@@ -9,9 +9,8 @@ header {
     color: rgb(0, 0, 0); 
     padding: 15px 30px;
     position: fixed;
-    width:97.5%; 
+    width: 95%; 
     top: 0;
-    z-index: 10;
 }
 
 .logo {
@@ -89,44 +88,50 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    margin-top: 100px; 
+    margin-top: 150px; 
 }
+/*CAROUSEL*/
 
-.banner {
+.carousel {
     position: relative;
-    width: 100%;    
-    height: 100vh;  
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
     overflow: hidden; 
 }
 
-.banner-image {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    display: block; 
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-.banner-text {
+.carousel-image {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+button {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    text-align: center; 
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.562);
-    border-radius: 10px;
-    max-width: 90%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
-.large-text {
-    font-size: 40px;
-    font-weight: bold;
-    margin: 0;
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.medium-text {
-    font-size: 24px;
-    margin: 10px 0 0;
+.prev {
+    left: 10px;
 }
 
+.next {
+    right: 10px;
+}

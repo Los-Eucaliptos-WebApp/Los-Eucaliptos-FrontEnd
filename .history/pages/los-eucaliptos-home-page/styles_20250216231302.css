@@ -9,9 +9,8 @@ header {
     color: rgb(0, 0, 0); 
     padding: 15px 30px;
     position: fixed;
-    width:97.5%; 
+    width: 95%; 
     top: 0;
-    z-index: 10;
 }
 
 .logo {
@@ -94,39 +93,15 @@ body {
 
 .banner {
     position: relative;
-    width: 100%;    
-    height: 100vh;  
-    overflow: hidden; 
+    width: 100%;
+    max-width: 100%;
+    height: 100%; 
+    overflow: hidden;
 }
 
 .banner-image {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    display: block; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
-
-.banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    color: white;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.562);
-    border-radius: 10px;
-    max-width: 90%;
-}
-
-.large-text {
-    font-size: 40px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.medium-text {
-    font-size: 24px;
-    margin: 10px 0 0;
-}
-

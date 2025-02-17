@@ -9,9 +9,8 @@ header {
     color: rgb(0, 0, 0); 
     padding: 15px 30px;
     position: fixed;
-    width:97.5%; 
+    width: 95%; 
     top: 0;
-    z-index: 10;
 }
 
 .logo {
@@ -100,33 +99,35 @@ body {
 }
 
 .banner-image {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;     
+    height: 100%;  
+    object-fit: cover;
     display: block; 
 }
 
+
 .banner-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    color: white;
+    top: 50%;         /* Alinea al centro verticalmente */
+    left: 50%;        /* Alinea al centro horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para que quede exactamente en el centro */
+    text-align: center;  /* Centra el texto */
+    color: white;        /* Color del texto */
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.562);
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
     max-width: 90%;
 }
 
+*/
 .large-text {
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 40px; 
+    font-weight: bold; 
     margin: 0;
 }
 
 .medium-text {
-    font-size: 24px;
+    font-size: 24px;    
     margin: 10px 0 0;
 }
 
