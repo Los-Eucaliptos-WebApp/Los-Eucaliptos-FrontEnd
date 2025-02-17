@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Eucaliptos</title>
+    <link rel="icon" href="/assets/ícono-los-eucaliptos.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/assets/logo-los-eucaliptos.png" alt="Logo">
+        </div>
+        <div class="menu">
+        <br><br><br><br><br>
+            <button>Dashboard</button>
+            <button>Req.Pendientes</button>
+            <button>Req.Cerrados</button>
+            <button>Sol.Pendientes</button>
+            <button>Sol.Cerrados</button>
+            <button>Temas</button>
+            <button>Temas</button>
+            <button>Notificationes</button>
+
+        </div>
+        <div class="logout">
+            <button id="logout">Salir</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Requerimientos Pendientes</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Buscar por ID o solicitante">
+            <button id="searchButton">Buscar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Solicitante</th>
+                    <th>Estado</th>
+                    <th>Creación</th>
+                    <th>Días</th>
+                    <th>VB1</th>
+                    <th>VB2</th>
+                    <th>VB3</th>
+                </tr>
+            </thead>
+           <tbody>
+     <tr>
+        <td>0001</td>
+        <td>Nombre Apellido</td>
+        <td class="status pending">En espera</td>
+        <td class="creation-date" data-date="2024-02-10">10/02/2024</td>
+        <td class="days-passed"></td>
+        <td class="approved">Firmado</td>
+        <td class="review">En revisión</td>
+        <td class="review">En revisión</td>
+    </tr>
+    <tr>
+        <td>0002</td>
+        <td>Juan Pérez</td>
+        <td class="status approved">Aprobado</td>
+        <td class="creation-date" data-date="2024-02-11">11/02/2024</td>
+        <td class="days-passed"></td>
+        <td class="approved">Firmado</td>
+        <td class="review">En revisión</td>
+        <td class="review">En revisión</td>
+    </tr>
+    <tr>
+        <td>0003</td>
+        <td>Laura Gómez</td>
+        <td class="status pending">En espera</td>
+        <td class="creation-date" data-date="2024-02-12">12/02/2024</td>
+        <td class="days-passed"></td>
+        <td class="approved">Firmado</td>
+        <td class="review">En revisión</td>
+        <td class="review">En revisión</td>
+    </tr>
+    <tr>
+        <td>0004</td>
+        <td>Pedro Martínez</td>
+        <td class="status approved">Aprobado</td>
+        <td class="creation-date" data-date="2024-02-13">13/02/2024</td>
+        <td class="days-passed"></td>
+        <td class="approved">Firmado</td>
+        <td class="review">En revisión</td>
+        <td class="review">En revisión</td>
+    </tr>
+    <tr>
+        <td>0005</td>
+        <td>Elena Sánchez</td>
+        <td class="status pending">En espera</td>
+        <td class="creation-date" data-date="2024-02-14">14/02/2024</td>
+        <td class="days-passed"></td>
+        <td class="approved">Firmado</td>
+        <td class="review">En revisión</td>
+        <td class="review">En revisión</td>
+    </tr>
+    <tr>
+        <td>0006</td>
+        <td>Antonio Ruiz</td>
+        <td class="status approved">Aprobado</td>
+        <td class="creation-date" data-date="2024-02-15">15/02/2024</td>
+        <td class="days-passed"></td>
+        <td class="approved">Firmado</td>
+        <td class="review">En revisión</td>
+        <td class="review">En revisión</td>
+    </tr>
+    <tr>
+        <td>0007</td>
+        <td>Carlos Díaz</td>
+        <td class="status pending">En espera</td>
+        <td class="creation-date" data-date="2024-02-16">16/02/2024</td>
+        <td class="days-passed"></td>
+        <td class="approved">Firmado</td>
+        <td class="review">En revisión</td>
+        <td class="review">En revisión</td>
+    </tr>
+    <tr>
+        <td>0008</td>
+        <td>María López</td>
+        <td class="status approved">Aprobado</td>
+        <td class="creation-date" data-date="2024-02-17">17/02/2024</td>
+        <td class="days-passed"></td>
+        <td class="approved">Firmado</td>
+        <td class="review">En revisión</td>
+        <td class="review">En revisión</td>
+    </tr>
+    <tr>
+        <td>0009</td>
+        <td>Lucía Martínez</td>
+        <td class="status pending">En espera</td>
+        <td class="creation-date" data-date="2024-02-18">18/02/2024</td>
+        <td class="days-passed"></td>
+        <td class="approved">Firmado</td>
+        <td class="review">En revisión</td>
+        <td class="review">En revisión</td>
+    </tr>
+    <tr>
+        <td>0010</td>
+        <td>Ricardo Fernández</td>
+        <td class="status approved">Aprobado</td>
+        <td class="creation-date" data-date="2024-02-19">19/02/2024</td>
+        <td class="days-passed"></td>
+        <td class="approved">Firmado</td>
+        <td class="review">En revisión</td>
+        <td class="review">En revisión</td>
+    </tr>
+    <tr>
+        <td>0011</td>
+        <td>José Álvarez</td>
+        <td class="status pending">En espera</td>
+        <td class="creation-date" data-date="2024-02-20">20/02/2024</td>
+        <td class="days-passed"></td>
+        <td class="approved">Firmado</td>
+        <td class="review">En revisión</td>
+        <td class="review">En revisión</td>
+    </tr>
+</tbody>
+
+        </table>
+        <div class="pagination">
+            <button id="prevPage">Anterior</button>
+            <span id="currentPage">1</span>
+            <button id="nextPage">Siguiente</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
