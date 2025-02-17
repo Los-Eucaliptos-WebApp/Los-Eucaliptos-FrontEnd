@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Ajuste para alinear la tabla verticalmente */
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajusta el ancho para que ocupe más espacio */
+    max-width: 1200px; /* Aumenta el ancho máximo */
+    text-align: center;
+    margin-top: 20px; /* Espacio adicional desde el top */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #3498db;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #ffffff;
+    color: rgb(7, 7, 7);
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination button:hover {
+    background-color: #2980b9;
+}
+
+.pagination span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu button {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    color: rgb(35, 43, 159);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: medium;
+    text-align: left;
+}
+
+.menu button:hover {
+    background-color: #20c16b;
+}
+
+.logout {
+    margin-top: auto;
+}
+
+.logout button {
+    background-color: #ffffff;
+    border: none;
+    padding: 50px;
+    color: rgb(235, 75, 75);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: medium;
+}
+
+.logout button:hover {
+    background-color: #f7f7f7;
+}
+
+.container {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px); /* La tabla ocupará el espacio restante */
+}

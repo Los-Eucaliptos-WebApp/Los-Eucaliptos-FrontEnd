@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimientos Pendientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <button>Inicio</button>
+            <button>Requerimientos</button>
+            <button>Configuración</button>
+        </div>
+        <div class="logout">
+            <button id="logout">Salir</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>Requerimientos Pendientes</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Buscar por ID o solicitante">
+            <button id="searchButton">Buscar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Solicitante</th>
+                    <th>Estado</th>
+                    <th>Creación</th>
+                    <th>Días</th>
+                    <th>VB1</th>
+                    <th>VB2</th>
+                    <th>VB3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0001</td>
+                    <td>Nombre Apellido</td>
+                    <td class="status pending">En espera</td>
+                    <td>DD/MM/AA</td>
+                    <td>03</td>
+                    <td class="approved">Firmado</td>
+                    <td class="review">En revisión</td>
+                    <td class="review">En revisión</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button id="prevPage">Anterior</button>
+            <span id="currentPage">1</span>
+            <button id="nextPage">Siguiente</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
