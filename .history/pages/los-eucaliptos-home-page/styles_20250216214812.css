@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* ENCABEZADO */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2C3E50;
+    color: white;
+    padding: 15px 30px;
+}
+
+/* Contenedor del logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* Alinea a la izquierda */
+    margin: 0;
+}
+
+/* Tamaño de la imagen */
+.logo img {
+    width: 40px;  /* Ajusta el tamaño del logo según tu preferencia */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Estilo del texto Los Eucaliptos */
+.logo h1 {
+    font-size: 20px;  /* Ajusta el tamaño del texto */
+    margin: 0;
+    color: white;
+}
+
+/* NAVEGACIÓN */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* BOTONES DE INICIO Y REGISTRO */
+.auth-buttons {
+    margin-left: 20px;
+}
+
+.auth-buttons .btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.btn-secondary {
+    background-color: #28a745;
+}

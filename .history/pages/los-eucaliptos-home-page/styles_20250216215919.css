@@ -1,0 +1,73 @@
+/* ENCABEZADO */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;  /* Fondo blanco */
+    color: rgb(20, 54, 94);  /* Texto en azul oscuro */
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil para dar profundidad */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo img {
+    width: 80px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+/* NAVEGACIÓN */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Estilo de los enlaces de navegación */
+nav ul li a {
+    color: rgb(20, 54, 94); /* Color del texto del enlace */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre los enlaces */
+nav ul li a:hover {
+    color: white; /* Cambia el color del texto cuando se pasa el ratón */
+    background-color: rgb(20, 54, 94); /* Color de fondo al hacer hover */
+    border-radius: 5px; /* Bordes redondeados para mejorar el efecto */
+}
+
+/* BOTONES DE AUTENTICACIÓN */
+.auth-buttons {
+    margin-left: 20px;
+}
+
+.auth-buttons .btn {
+    background-color: #3498db; /* Fondo azul para los botones */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.auth-buttons .btn-secondary {
+    background-color: #28a745; /* Fondo verde para el botón secundario */
+}
